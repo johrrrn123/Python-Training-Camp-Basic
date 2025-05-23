@@ -25,8 +25,9 @@ class Student:
         - age: 学生年龄
         - grade: 学生成绩
         """
-        # 请在下方编写代码，完成属性初始化
-        pass
+        self.name = name
+        self.age = age
+        self.grade = grade
     
     def print_info(self):
         """
@@ -38,8 +39,7 @@ class Student:
         返回:
         - 无返回值，直接打印信息
         """
-        # 请在下方编写代码，完成打印学生信息的功能
-        pass
+        print(f"姓名: {self.name}, 年龄: {self.age}, 成绩: {self.grade}")
     
     def is_passing(self):
         """
@@ -51,8 +51,7 @@ class Student:
         返回:
         - 布尔值，表示是否通过考试
         """
-        # 请在下方编写代码，完成判断功能
-        pass
+        return self.grade >= 60
 
 
 def create_student_example():
@@ -62,8 +61,6 @@ def create_student_example():
     返回:
     - 创建的Student对象
     """
-    # 请在下方编写代码
-    # 创建一个Student对象，设置姓名为"张三"，年龄为18，成绩为85
-    # 调用print_info()方法打印学生信息
-    # 返回创建的Student对象
-    pass 
+    student = Student("张三", 18, 85)
+    student.print_info()
+    return student
